@@ -1,4 +1,4 @@
-package input.menu
+package activity.menu.input
 
 enum class MenuCommand(val nameMenu: String) {
     START("start"),

@@ -1,7 +1,5 @@
-import input.menu.CommandInput
-import input.menu.MenuCommand
+import activity.menu.menuTui
 
 fun main() {
-    CommandInput.fillInput(readln())
-    main()
+    menuTui()
 }

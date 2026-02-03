@@ -1,0 +1,3 @@
+open class MainActivity {
+
+}
