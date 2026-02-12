@@ -1,7 +1,7 @@
 package activity.menu.input
 
-import activity.CommandInput
 import activity.ErrorMessage
+import activity.menu.helpTui
 
 class MenuCommandInput(val input: String) {
     var isError: Boolean = false
@@ -10,7 +10,7 @@ class MenuCommandInput(val input: String) {
         when (input) {
             MenuCommand.START.nameMenu -> println("game start")
             MenuCommand.OPTIONS.nameMenu -> println("enter to options")
-            MenuCommand.HELP.nameMenu -> println("enter to help/guide")
+            MenuCommand.HELP.nameMenu -> helpTui()
             MenuCommand.EXIT.nameMenu -> println("Exit the game")
             else -> {
                 if (input.isNotBlank()) println(

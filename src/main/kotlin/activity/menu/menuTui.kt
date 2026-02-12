@@ -1,12 +1,11 @@
 package activity.menu
 
-import activity.CommandInput
- import activity.clear
+import activity.clear
 import activity.menu.input.MenuCommand
 import activity.menu.input.MenuCommandInput
 
 fun menuTui() {
-    val titleGame = """
+    val titleGameMenu = """
         
         888888 88 8888P 88""Yb 88   88 8888P 88  dP 888888 
         88__   88   dP  88__dP 88   88   dP  88odP    88   
@@ -24,7 +23,7 @@ fun menuTui() {
         
     """.trimMargin()
     clear()
-    println(titleGame)
+    println(titleGameMenu)
     do {
         print(">> ")
         val reader = MenuCommandInput(readln())
