@@ -1,19 +1,18 @@
 package activity.menu
 
 import activity.CommandInput
+ import activity.clear
 import activity.menu.input.MenuCommand
 import activity.menu.input.MenuCommandInput
 
 fun menuTui() {
     val titleGame = """
         
-        ██╗    ██╗██╗  ██╗███████╗███╗   ██╗██╗   ██╗ ██████╗  ██████╗ 
-        ██║    ██║██║  ██║██╔════╝████╗  ██║╚██╗ ██╔╝██╔═══██╗██╔═══██╗
-        ██║ █╗ ██║███████║█████╗  ██╔██╗ ██║ ╚████╔╝ ██║   ██║██║   ██║
-        ██║███╗██║██╔══██║██╔══╝  ██║╚██╗██║  ╚██╔╝  ██║   ██║██║   ██║
-        ╚███╔███╔╝██║  ██║███████╗██║ ╚████║   ██║   ╚██████╔╝╚██████╔╝
-         ╚══╝╚══╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝   ╚═╝    ╚═════╝  ╚═════╝    
-         
+        888888 88 8888P 88""Yb 88   88 8888P 88  dP 888888 
+        88__   88   dP  88__dP 88   88   dP  88odP    88   
+        88""   88  dP   88""Yb Y8   8P  dP   88"Yb    88   
+        88     88 d8888 88oodP `YbodP' d8888 88  Yb   88   
+        
     Main menu Command:
     start - to start the game
     options - to view the option menus
@@ -24,11 +23,10 @@ fun menuTui() {
         
         
     """.trimMargin()
-    print("\u001b[H\u001b[2J")
-    System.out.flush()
+    clear()
     println(titleGame)
     do {
-        print("~> ")
+        print(">> ")
         val reader = MenuCommandInput(readln())
         reader.executeCommand()
     } while(reader.isError)
