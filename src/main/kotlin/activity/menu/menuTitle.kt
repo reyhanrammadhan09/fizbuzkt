@@ -1,10 +1,9 @@
 package activity.menu
 
 import activity.clear
-import activity.menu.input.MenuCommand
 import activity.menu.input.MenuCommandInput
 
-fun menuTui() {
+fun menuTitle() {
     val titleGameMenu = """
         
         888888 88 8888P 88""Yb 88   88 8888P 88  dP 888888 
