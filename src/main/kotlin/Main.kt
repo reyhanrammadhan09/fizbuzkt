@@ -1,5 +1,5 @@
-import activity.menu.menuTui
+import activity.menu.menuTitle
 
 fun main() {
-    menuTui()
+    menuTitle()
 }

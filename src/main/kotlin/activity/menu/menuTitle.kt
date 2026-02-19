@@ -17,7 +17,7 @@ fun menuTitle() {
     help - for help and guidance
     exit - to quit this game
         
-    o,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+    o,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
         
         
     """.trimMargin()
